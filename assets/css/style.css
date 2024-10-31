@@ -187,3 +187,25 @@ header ul {
 #next {
     right: 20px;
 }
+
+.right {
+    right: 20px;
+}
+
+.right .item.hidden img.fruit {
+    animation: toOut 0.8s ease-in-out 1;
+    top: 100%;
+    opacity: 0;
+}
+
+@keyframes toActivatePrev {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.right .item.active img.fruit,
+.right .item.active .content {
+    animation: toActivePrev 0.8s ease-in-out 1;
+}
